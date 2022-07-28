@@ -1,0 +1,26 @@
+{
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "**/node_modules/**"
+  ],
+  "compilerOptions": {
+    "lib": ["ESNext", "ES5", "DOM"],
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "removeComments": false,
+    "declaration": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
