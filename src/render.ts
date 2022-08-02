@@ -13,10 +13,10 @@ const messages = {
 const createElement = (message: string, options: { valid: boolean; permanent: boolean }) => {
   const DIV = document.createElement("div");
 
-  const dispaly = options.permanent || !options.valid ? "flex" : "none";
+  const display = options.permanent || !options.valid ? "flex" : "none";
   DIV.innerHTML = /** html */ `
     <div style="
-    display: ${dispaly}; 
+    display: ${display}; 
     align-items: center;
     line-height: var(--line-height)">
         <span style="

@@ -39,7 +39,7 @@ export default function Validation(
   callback: (validation: ValidationParams) => void
 ) {
   if (element === undefined || element === null) {
-    throw Error("Element can't be undifiend");
+    throw Error("Element can't be undefined");
   }
 
   let val: string,
